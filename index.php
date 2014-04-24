@@ -45,7 +45,7 @@ $tree = buildObjectTree($obj);
                 ctx.fill();
                 ctx.fillStyle = "red";
                 var text = vertex.op;
-                if (vertex.value) {
+                if (vertex.op === 'leave') {
                     text = vertex.value;
                 }
                 ctx.fillText(text, x-6, y+6);
